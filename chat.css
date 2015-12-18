@@ -1,0 +1,256 @@
+
+#chat-container{
+	background: url("img/page_bg.jpg") repeat-x ;
+	width: 730px;;
+	margin-top: 50px;
+	border-radius: 6px;
+}
+#login-frame span{
+	color: red;
+}
+#sub-chat-container{
+	margin-top: 20px;
+	margin-bottom: 40px;
+	width: 500px;
+}
+
+#row-top{
+	height: 40px;
+	background:url('img/solid_gray.jpg') repeat-x #d0d0d0;
+	border-radius: 7px 7px 0px 0px;
+	border:1px solid #fff;
+
+}
+
+#row-center{
+	height: 430px;
+	margin-top: 0px;
+	margin-bottom: 13px;
+}
+#col-1{
+	background-color: white ;
+	height: 430px;
+	border-radius: 0px 0px 0px 7px;
+	padding: 30px;
+	overflow: auto;
+}
+#col-2{
+	background:rgba(32,32,32,.5);
+	border:1px solid #111111;
+	height: 430px;
+	float: right;
+	border-radius: 0px 0px 7px 0px;
+	overflow: auto;
+	
+}
+#online-users{
+	position: relative;
+}
+#online-users li{
+	color: white;
+	text-decoration: none;
+	border-style: none;
+	margin-left: 1px;
+	padding-top: 10px;
+	list-style: none;
+}
+#online-users li a{
+	text-decoration: none;
+	color: #eee;
+}
+#online-users li span{
+	color: green;
+	margin-left: 15px;
+	padding: 10px;
+}
+.user-online{
+	position: relative;
+	padding: 10px;
+}
+.user-online:hover{
+	text-decoration:underline;
+	background: #030000;
+	padding-left: 10px;
+	padding-right: 0px;
+
+}
+.user-online:before{
+	position: absolute;
+	content: "";
+	width: 10px;
+	height: 10px;
+	background: #006600;
+	border-radius: 10px;
+	top: 38%;
+	right: 0px;
+
+}
+.you{
+	color: white;
+	position: relative;
+	background: grey;
+	border-radius: 5px 3px 3px 5px;
+	padding-left: 7px;
+	margin-left: -12px;
+	margin-bottom: 7px;
+	width: 200px;
+	padding: 5px;
+	float: left;
+
+}
+.you:before{
+	position: absolute;
+	content:"";
+	width:10px;
+	height:10px;
+	border-width:10px;
+	border-style: solid;
+	border-color: transparent grey transparent transparent;
+	top:6px;
+	left:-17px;
+}
+.me{
+	color: black;
+	position: relative;
+	text-align: right;
+	background: #d0d0d0;
+	border-radius: 5px;
+	padding-right: 7px;
+	margin-left: -12px;
+	margin-bottom: 7px;
+	width: 200px;
+	padding: 5px;
+	float: right;
+}
+.me:before{
+	position: absolute;
+	content:"";
+	width:10px;
+	height:10px;
+	border-width:10px;
+	border-style: solid;
+	border-color: transparent transparent transparent #d0d0d0;
+	top:6px;
+	right:-17px;
+}
+
+#row-bottom{
+	background:url('img/solid_gray.jpg') repeat-x #d0d0d0;
+	height: 80px;
+	width: 500px;
+	border-radius: 5px;
+	border:1px solid #fff;
+	position: relative;
+}
+#row-bottom:before{
+	position: absolute;
+	content: "";
+	width: 50px;
+	height: 15px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: transparent transparent #d0d0d0 transparent;
+	top: -21px;
+	left: 10px;
+
+}
+#online-users{
+	background: none;
+	font-size: 16px;
+}
+
+#form #message{
+	margin-left: 12px;
+	margin-top: 6px;
+	width: 300px;
+	background:#d0d0d0;
+	height: 40px;
+}
+#text{
+	margin-top: -20px;
+	font-size: 11px;
+}
+.btn{
+	background: url('img/button_blue.png') no-repeat;
+	width: 60px;
+	height: 29px;
+	padding-top: -6px;
+	border-style: none;
+	color: black;
+}
+#logout{
+	color: ;
+	margin-top: -16px;
+}
+
+/*Login section*/
+
+#form-login{
+	color: 
+}
+#login-frame{
+	padding: 40px;
+	background: #eee;
+	margin-top: 150px;
+	width: 300px;
+	border-radius: 5px;
+	color: black;
+}
+#register-frame{
+	padding: 40px;
+	background: #eee;
+	margin-top: 70px;
+	width: 350px;
+	border-radius: 5px;
+	color: black;
+}
+.form-control{
+	background:#d0d0d0;
+	border:
+}
+.top{
+	margin-left: -15px;
+	list-style: none;
+}
+.top-text{
+	display: inline-block;
+	margin-top: 8px;
+}
+.top-text:last-child{
+	margin-right: 10px;
+	float: right;
+}
+.button	{
+	border:1px solid black;
+	padding: 5px;
+	border-radius: 4px;
+	background: linear-gradient(#505050, #383838);
+	color: #fff;
+}
+.button:hover{
+	color: #fff;
+	text-decoration: none;
+	background: linear-gradient(#383838, #505050);
+}
+.says{
+	font-weight: bold;
+}
+.time{
+	float: right;
+	font-size: 10px;
+}
+.name{
+	font-weight: bold;
+}
+.msg-area{
+	margin: 5px;
+	background:#d0d0d0;
+	border-radius: 6px;
+}
+.now{
+	float: right;
+}
+.button a{
+	text-decoration: none;
+	color: white;
+}

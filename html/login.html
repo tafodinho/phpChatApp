@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../page.css">
+		<link rel="stylesheet" href="../chat.css">
+	</head>
+	<body>
+		<div class="container" id="login-frame">
+			<form role="form" method="POST" action="../php/login.php">
+				<div id="form-login">
+					<label for="username">Username</label>
+					<input type="text" name="username" class="form-control" id="login-input"><br>
+					<label for="password">Password</label>
+					<input type="password" name="password" class="form-control" id="login-input"><br>
+					<input type="submit" name="submit" class="btn btn-info" value="Login" id="">
+					<button class="btn btn-info" style="float: right"><a href="registration.html"></a>Register</a></button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+create database chat;
+
+create table users(
+	id int(6) unsigned auto_increment primary key,
+        first_name varchar(20) not null,
+        last_name varchar(20) not null,
+        username varchar(20) not null,
+        password varchar(30) not null
+ );
+
+ create table message(
+	id int(6) unsigned auto_increment primary key,
+        username varchar(20) not null,
+        message varchar(500) not null,
+     	time int(30)
+ );

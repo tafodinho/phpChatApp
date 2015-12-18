@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Register</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../page.css">
+		<link rel="stylesheet" href="../chat.css">
+		<?php
+			$error = $_GET['error'];
+		?>
+	</head>
+	<body>
+		<div class="container" id="login-frame">
+			<span><?php echo $error; ?></span>
+			<form role="form" method="POST" action="../php/registration.php">
+				<div id="form-login">
+					<label for="fname">First Name</label>
+					<input type="text" name="fname" class="form-control" id="login-input"><br>
+					<label for="lname">Last Name</label>
+					<input type="text" name="lname" class="form-control" id="login-input"><br>
+					<label for="username">Username</label>
+					<input type="text" name="username" class="form-control" id="login-input"><br>
+					<label for="password">Password</label>
+					<input type="password" name="password" class="form-control" id="login-input"><br>
+					<input type="submit" name="submit" class="btn btn-info" value="Register" id="">
+					
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

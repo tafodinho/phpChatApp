@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Search</title>
+		<script>
+		function showUser(str)
+		{
+			if(str == "")
+			{
+				document.getElementById("textHint").innerHTML = "";
+				return;
+			}
+			else
+			{
+				xmlhttp = new XMLHttpRequest();
+				xmlhttp.onreadystatechange = function()
+				{
+					if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
+					{
+						document.getElementById("textHint").innerHTML = xmlhttp.responseText;
+					}
+				}
+				xmlhttp.open("GET", "getuser.php?q="+str, true);
+				xmlhttp.send();
+			}
+		}
+
+		</script>
+	</head>
+	<body>
+		<form metho="GET">
+			<input type="text" name="title" onkeyup="showUser(this.value)">
+		</form>
+		<br>
+		<div id="textHint"><b>Person info will be listed here...</b></div>
+	</body>
+</html>
